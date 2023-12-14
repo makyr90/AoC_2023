@@ -47,7 +47,7 @@ for num_index_pair in number_indexes:
     if valid_part:
         parts_num_sum += num
 
-print(parts_num_sum)
+print("Part 1 answer: {}".format(parts_num_sum))
 
 star_indexes = []
 for pos, symbol in symbol_indexes.items():
@@ -76,4 +76,4 @@ for star_index in star_indexes:
     if len(numbers) == 2:
         sum_gear_ratios += numbers[0] * numbers[1]
 
-print(sum_gear_ratios)
+print("Part 2 answer: {}".format(sum_gear_ratios))

@@ -59,5 +59,5 @@ for line in lines:
     calibration_value_part_1 += find_calibration(line)
     calibration_value_part_2 += find_calibration(nums_replacement(line))
 
-print(calibration_value_part_1)
-print(calibration_value_part_2)
+print("Part 1 answer: {}".format(calibration_value_part_1))
+print("Part 2 answer: {}".format(calibration_value_part_2))

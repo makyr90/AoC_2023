@@ -27,6 +27,8 @@ for game_id, cube_sets in game_cube_counter.items():
     if valid_game:
         sum_ids += game_id
 
+print("Part 1 answer: {}".format(sum_ids))
+
 sum_powers = 0
 for game_id, cube_sets in game_cube_counter.items():
     max_green = max([x["green"] for x in cube_sets])
@@ -35,4 +37,4 @@ for game_id, cube_sets in game_cube_counter.items():
     power = max_red * max_blue * max_green
     sum_powers += power
 
-print(sum_powers)
+print("Part 2 answer: {}".format(sum_powers))

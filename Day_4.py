@@ -19,7 +19,8 @@ for card_idx, card in enumerate(puzzle_data):
     card_matches[card_idx+1] = count_matches
     points += matches
 
-print(points)
+print("Part 1 answer: {}".format(points))
+
 total_cards = {}
 
 for card, wins in card_matches.items():
@@ -35,4 +36,4 @@ for card, wins in card_matches.items():
                 else:
                     total_cards[card + jdx][0] += 1
 
-print(sum([x[0] for _, x in total_cards.items()]))
+print("Part 2 answer: {}".format(sum([x[0] for _, x in total_cards.items()])))
